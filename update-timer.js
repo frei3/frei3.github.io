@@ -16,7 +16,7 @@ $(document).ready( function() {
   }
 
   // Initialer Abruf der Wartezeit und Update-Intervall-Funktion starten
-  $.get( 'https://frei3maintenance.s3.eu-central-1.amazonaws.com/maintenance/f3-maintenance-config.json', [], function(data) {
+  $.get( 'https://frei3.github.io/f3-maintenance-config.json', [], function(data) {
     var now = Date.now();
     var nowDate = new Date();
     // Differenz in Sekunden
