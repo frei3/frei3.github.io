@@ -26,7 +26,6 @@ $(document).ready( function() {
 			var currentDateMidnight = (new Date( nowDate.getFullYear(), nowDate.getMonth(), nowDate.getDate() )).getTime();
 			// Halbstunden-Differenz
 			var hhdiff = Math.floor( ( now - currentDateMidnight ) / 1800000 );
-			console.info(hhdiff)
 			// übernächste Halbstundenmarke
 			var diff = Math.floor( ( currentDateMidnight + 1800000 * (hhdiff + 2) - now ) / 1000 );
     }
